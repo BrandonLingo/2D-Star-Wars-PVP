@@ -78,7 +78,6 @@ class Game:
 
     def collisions(self):
         if pygame.sprite.spritecollide(self.player_2, self.bullet_group1, True, pygame.sprite.collide_mask):
-            debug('Collision')
             self.player_2_health -= 1
             print('Player 2 health: ', self.player_2_health)    
         
